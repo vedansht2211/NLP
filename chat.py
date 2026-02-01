@@ -9,7 +9,7 @@ def get_location():
     country=data.get('country',"unknown")
     return city,country
 
-weather_api="94dc82a3070ddc73c0f2ec753b59574b"
+#weather_api="api key"
 def get_weather():
     response=requests.get("http://ip-api.com/json/")
     data=response.json()
@@ -71,4 +71,5 @@ while chat:
         print(cur.strftime("%I:%M:%S"))
 
     else:
+
         print("i cant understand")
